@@ -9,28 +9,12 @@ import UIKit
 
 class GridLayout: UICollectionViewLayout {
 
-    var columnSizes: [CGFloat] {
-        get { _columnSizes }
-        set {
-            assert(newValue.count > 0)
-            _columnSizes = newValue
-            columnRanges = calculateRanges(fromFractionalSizes: _columnSizes)
-            invalidateLayout()
-        }
+    enum Errors: Error {
+        case invalidArgument
     }
 
-    var rowSizes: [CGFloat] {
-        get { _rowSizes }
-        set {
-            assert(newValue.count > 0)
-            _rowSizes = newValue
-            rowRanges = calculateRanges(fromFractionalSizes: _rowSizes)
-            invalidateLayout()
-        }
-    }
-
-    private var _columnSizes = [CGFloat]()
-    private var _rowSizes = [CGFloat]()
+    private(set) var columnSizes = [CGFloat]()
+    private(set) var rowSizes = [CGFloat]()
 
     private var columnRanges = [Range<CGFloat>]()
     private var rowRanges = [Range<CGFloat>]()
@@ -39,13 +23,27 @@ class GridLayout: UICollectionViewLayout {
     private var contentSize: CGSize = .zero
 
     // MARK: - Grid API
-    func set(columnSizes newColumnSizes: [CGFloat], rowSizes newRowSizes: [CGFloat]) {
-        assert(newColumnSizes.count > 0)
-        assert(newRowSizes.count > 0)
-        _columnSizes = newColumnSizes
-        _rowSizes = newRowSizes
-        columnRanges = calculateRanges(fromFractionalSizes: _columnSizes)
-        rowRanges = calculateRanges(fromFractionalSizes: _rowSizes)
+    func set(columnSizes newColumnSizes: [CGFloat]) throws {
+        guard newColumnSizes.count > 0 else { throw Errors.invalidArgument }
+        columnSizes = newColumnSizes
+        columnRanges = calculateRanges(fromFractionalSizes: columnSizes)
+        invalidateLayout()
+    }
+
+    func set(rowSizes newRowSizes: [CGFloat]) throws {
+        guard newRowSizes.count > 0 else { throw Errors.invalidArgument }
+        rowSizes = newRowSizes
+        rowRanges = calculateRanges(fromFractionalSizes: rowSizes)
+        invalidateLayout()
+    }
+
+    func set(columnSizes newColumnSizes: [CGFloat], rowSizes newRowSizes: [CGFloat]) throws {
+        guard newColumnSizes.count > 0 else { throw Errors.invalidArgument }
+        guard newRowSizes.count > 0 else { throw Errors.invalidArgument }
+        columnSizes = newColumnSizes
+        rowSizes = newRowSizes
+        columnRanges = calculateRanges(fromFractionalSizes: columnSizes)
+        rowRanges = calculateRanges(fromFractionalSizes: rowSizes)
         invalidateLayout()
     }
     

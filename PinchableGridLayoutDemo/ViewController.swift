@@ -21,8 +21,7 @@ class ViewController: UICollectionViewController {
         super.viewDidLoad()
         
         if let gridLayout = collectionView.collectionViewLayout as? GridLayout {
-            gridLayout.columnSizes = initialColumnSizes
-            gridLayout.rowSizes = initialRowSizes
+            try! gridLayout.set(columnSizes: initialColumnSizes, rowSizes: initialRowSizes)
         }
 
         let gestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(recognizePinchGesture(from:)))
@@ -39,7 +38,7 @@ class ViewController: UICollectionViewController {
         newColumnSizes[indexPath.section] = clamp(newColumnSizes[indexPath.section] * scale, 0.5, 2)
         newRowSizes[indexPath.section] = clamp(newRowSizes[indexPath.section] * scale, 0.5, 2)
 
-        gridLayout.set(columnSizes: newColumnSizes, rowSizes: newRowSizes)
+        try! gridLayout.set(columnSizes: newColumnSizes, rowSizes: newRowSizes)
         
         self.initialColumnSizes = newColumnSizes
         self.initialRowSizes = newRowSizes
@@ -55,7 +54,7 @@ class ViewController: UICollectionViewController {
         newRowSizes = initialRowSizes
 
         let gridLayout = GridLayout()
-        gridLayout.set(columnSizes: newColumnSizes, rowSizes: newRowSizes)
+        try! gridLayout.set(columnSizes: newColumnSizes, rowSizes: newRowSizes)
 
         collectionView.setCollectionViewLayout(gridLayout, animated: true)
     }

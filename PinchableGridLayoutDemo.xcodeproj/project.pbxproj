@@ -8,19 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		30211093288578AA00B1DD9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30211092288578AA00B1DD9B /* AppDelegate.swift */; };
-		30211095288578AA00B1DD9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30211094288578AA00B1DD9B /* SceneDelegate.swift */; };
 		30211097288578AA00B1DD9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30211096288578AA00B1DD9B /* ViewController.swift */; };
 		3021109A288578AA00B1DD9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30211098288578AA00B1DD9B /* Main.storyboard */; };
 		3021109C288578AD00B1DD9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3021109B288578AD00B1DD9B /* Assets.xcassets */; };
 		3021109F288578AD00B1DD9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3021109D288578AD00B1DD9B /* LaunchScreen.storyboard */; };
 		302110A728857CFB00B1DD9B /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302110A628857CFB00B1DD9B /* GridLayout.swift */; };
 		30D4F1502887CE9200BF0858 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F14F2887CE9200BF0858 /* Utility.swift */; };
+		30D4F1582887EAD000BF0858 /* GridLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F1572887EAD000BF0858 /* GridLayoutTests.swift */; };
+		30D4F15F2887F59800BF0858 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F15E2887F59800BF0858 /* UtilityTests.swift */; };
+		30D4F1612887F85500BF0858 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F1602887F85500BF0858 /* ViewControllerTests.swift */; };
+		30D4F1632887FAAF00BF0858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F1622887FAAF00BF0858 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30D4F1592887EAD000BF0858 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30211087288578AA00B1DD9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3021108E288578AA00B1DD9B;
+			remoteInfo = PinchableGridLayoutDemo;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3021108F288578AA00B1DD9B /* PinchableGridLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinchableGridLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30211092288578AA00B1DD9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30211094288578AA00B1DD9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30211096288578AA00B1DD9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30211099288578AA00B1DD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3021109B288578AD00B1DD9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,10 +40,22 @@
 		302110A0288578AD00B1DD9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		302110A628857CFB00B1DD9B /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		30D4F14F2887CE9200BF0858 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		30D4F1552887EAD000BF0858 /* PinchableGridLayoutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchableGridLayoutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D4F1572887EAD000BF0858 /* GridLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutTests.swift; sourceTree = "<group>"; };
+		30D4F15E2887F59800BF0858 /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
+		30D4F1602887F85500BF0858 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		30D4F1622887FAAF00BF0858 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3021108C288578AA00B1DD9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D4F1522887EAD000BF0858 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				30211091288578AA00B1DD9B /* PinchableGridLayoutDemo */,
+				30D4F1562887EAD000BF0858 /* PinchableGridLayoutDemoTests */,
 				30211090288578AA00B1DD9B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				3021108F288578AA00B1DD9B /* PinchableGridLayoutDemo.app */,
+				30D4F1552887EAD000BF0858 /* PinchableGridLayoutDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,7 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				30211092288578AA00B1DD9B /* AppDelegate.swift */,
-				30211094288578AA00B1DD9B /* SceneDelegate.swift */,
+				30D4F1622887FAAF00BF0858 /* SceneDelegate.swift */,
 				30211096288578AA00B1DD9B /* ViewController.swift */,
 				302110A628857CFB00B1DD9B /* GridLayout.swift */,
 				30D4F14F2887CE9200BF0858 /* Utility.swift */,
@@ -71,6 +97,16 @@
 				302110A0288578AD00B1DD9B /* Info.plist */,
 			);
 			path = PinchableGridLayoutDemo;
+			sourceTree = "<group>";
+		};
+		30D4F1562887EAD000BF0858 /* PinchableGridLayoutDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				30D4F1572887EAD000BF0858 /* GridLayoutTests.swift */,
+				30D4F15E2887F59800BF0858 /* UtilityTests.swift */,
+				30D4F1602887F85500BF0858 /* ViewControllerTests.swift */,
+			);
+			path = PinchableGridLayoutDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +129,24 @@
 			productReference = 3021108F288578AA00B1DD9B /* PinchableGridLayoutDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		30D4F1542887EAD000BF0858 /* PinchableGridLayoutDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30D4F15D2887EAD000BF0858 /* Build configuration list for PBXNativeTarget "PinchableGridLayoutDemoTests" */;
+			buildPhases = (
+				30D4F1512887EAD000BF0858 /* Sources */,
+				30D4F1522887EAD000BF0858 /* Frameworks */,
+				30D4F1532887EAD000BF0858 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30D4F15A2887EAD000BF0858 /* PBXTargetDependency */,
+			);
+			name = PinchableGridLayoutDemoTests;
+			productName = PinchableGridLayoutDemoTests;
+			productReference = 30D4F1552887EAD000BF0858 /* PinchableGridLayoutDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +159,10 @@
 				TargetAttributes = {
 					3021108E288578AA00B1DD9B = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					30D4F1542887EAD000BF0858 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 3021108E288578AA00B1DD9B;
 					};
 				};
 			};
@@ -122,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				3021108E288578AA00B1DD9B /* PinchableGridLayoutDemo */,
+				30D4F1542887EAD000BF0858 /* PinchableGridLayoutDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +196,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30D4F1532887EAD000BF0858 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,15 +210,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D4F1632887FAAF00BF0858 /* SceneDelegate.swift in Sources */,
 				30D4F1502887CE9200BF0858 /* Utility.swift in Sources */,
 				30211097288578AA00B1DD9B /* ViewController.swift in Sources */,
 				30211093288578AA00B1DD9B /* AppDelegate.swift in Sources */,
 				302110A728857CFB00B1DD9B /* GridLayout.swift in Sources */,
-				30211095288578AA00B1DD9B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D4F1512887EAD000BF0858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D4F1612887F85500BF0858 /* ViewControllerTests.swift in Sources */,
+				30D4F15F2887F59800BF0858 /* UtilityTests.swift in Sources */,
+				30D4F1582887EAD000BF0858 /* GridLayoutTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30D4F15A2887EAD000BF0858 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3021108E288578AA00B1DD9B /* PinchableGridLayoutDemo */;
+			targetProxy = 30D4F1592887EAD000BF0858 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30211098288578AA00B1DD9B /* Main.storyboard */ = {
@@ -299,7 +383,6 @@
 				INFOPLIST_FILE = PinchableGridLayoutDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +409,6 @@
 				INFOPLIST_FILE = PinchableGridLayoutDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +421,40 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30D4F15B2887EAD000BF0858 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eagle-dan.PinchableGridLayoutDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinchableGridLayoutDemo.app/PinchableGridLayoutDemo";
+			};
+			name = Debug;
+		};
+		30D4F15C2887EAD000BF0858 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "eagle-dan.PinchableGridLayoutDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinchableGridLayoutDemo.app/PinchableGridLayoutDemo";
 			};
 			name = Release;
 		};
@@ -359,6 +475,15 @@
 			buildConfigurations = (
 				302110A4288578AD00B1DD9B /* Debug */,
 				302110A5288578AD00B1DD9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30D4F15D2887EAD000BF0858 /* Build configuration list for PBXNativeTarget "PinchableGridLayoutDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30D4F15B2887EAD000BF0858 /* Debug */,
+				30D4F15C2887EAD000BF0858 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
