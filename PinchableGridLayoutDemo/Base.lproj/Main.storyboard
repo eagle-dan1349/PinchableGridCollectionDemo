@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ukk-Ed-5oE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Grid-->
+        <scene sceneID="iih-Ju-cvK">
+            <objects>
+                <collectionViewController id="vZn-Pb-TeF" customClass="ViewController" customModule="PinchableGridLayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7yq-Dc-yxS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewLayout key="collectionViewLayout" id="7eH-v4-kS0" customClass="GridLayout" customModule="PinchableGridLayoutDemo" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" reuseIdentifier="GridLayoutDemo.cellId" id="gN5-oc-RFA">
+                                <rect key="frame" x="46.5" y="0.0" width="321" height="319"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4ky-4d-xhv">
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="319"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAp-f9-uJS">
+                                            <rect key="frame" x="8" y="8" width="305" height="303"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum neque et libero rhoncus, ut faucibus lorem faucibus. Proin aliquam molestie est, ac sagittis mauris dictum vitae. Cras eu metus purus. Proin et libero dictum, interdum tortor sit amet, dictum odio. Donec tincidunt, massa vitae porta aliquam, ipsum ex faucibus augue, sed tempus nunc leo ac enim. Aenean ultricies ornare pellentesque. Nulla vitae facilisis lorem, in luctus leo. Integer maximus fermentum erat, ut imperdiet ligula porttitor pulvinar. Fusce et ullamcorper ante, ac accumsan risus. Vivamus pharetra, odio et auctor tempus, velit nisl condimentum nisi, quis ullamcorper leo purus vel risus. Etiam pretium egestas scelerisque. Morbi a metus felis. </string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NAp-f9-uJS" firstAttribute="top" secondItem="4ky-4d-xhv" secondAttribute="top" constant="8" id="a4P-fS-jTA"/>
+                                        <constraint firstAttribute="bottom" secondItem="NAp-f9-uJS" secondAttribute="bottom" constant="8" id="bet-wM-AA5"/>
+                                        <constraint firstItem="NAp-f9-uJS" firstAttribute="leading" secondItem="4ky-4d-xhv" secondAttribute="leading" constant="8" id="en4-XD-M3n"/>
+                                        <constraint firstAttribute="trailing" secondItem="NAp-f9-uJS" secondAttribute="trailing" constant="8" id="l8C-v7-shP"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <size key="customSize" width="321" height="319"/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="vZn-Pb-TeF" id="bli-35-gfn"/>
+                            <outlet property="delegate" destination="vZn-Pb-TeF" id="JEQ-Zs-Jet"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Grid" largeTitleDisplayMode="never" id="5h2-TE-7xN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="HYd-Ds-Clk">
+                            <connections>
+                                <action selector="handleRefreshItemTap:" destination="vZn-Pb-TeF" id="PmC-gq-vz6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYu-LZ-eZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655.07246376811599" y="123.88392857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="36P-T9-0Qm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ukk-Ed-5oE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HrV-h4-1sv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vZn-Pb-TeF" kind="relationship" relationship="rootViewController" id="Q7V-7C-LAc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bxM-BX-MYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-255.07246376811597" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
