@@ -8,5 +8,5 @@
 import Foundation
 
 func clamp<T: Comparable>(_ value: T, _ minimum: T, _ maximum: T) -> T {
-    return max(min(value, maximum), minimum)
+    max(min(value, maximum), minimum)
 }

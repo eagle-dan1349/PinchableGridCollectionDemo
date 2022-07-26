@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GridViewController.swift
 //  PinchableGridLayoutDemo
 //
 //  Created by Daniil Orlov on 18.07.2022.
@@ -7,21 +7,24 @@
 
 import UIKit
 
-class ViewController: UICollectionViewController {
+class GridViewController: UICollectionViewController {
 
     static let cellId = "GridLayoutDemo.cellId"
 
-    var initialColumnSizes: [CGFloat] = [1, 1, 1]
-    var initialRowSizes: [CGFloat] = [1, 1, 1]
+    static let defaultColumnSizes: [CGFloat] = [1, 1, 1]
+    static let defaultRowSizes: [CGFloat] = [1, 1, 1]
 
-    var newColumnSizes: [CGFloat] = [1, 1, 1]
-    var newRowSizes: [CGFloat] = [1, 1, 1]
+    static let minCellSize = 0.5
+    static let maxCellSize = 2.0
+
+    var columnSizes: [CGFloat] = [1, 1, 1]
+    var rowSizes: [CGFloat] = [1, 1, 1]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         if let gridLayout = collectionView.collectionViewLayout as? GridLayout {
-            try! gridLayout.set(columnSizes: initialColumnSizes, rowSizes: initialRowSizes)
+            try? gridLayout.set(columnSizes: columnSizes, rowSizes: rowSizes)
         }
 
         let gestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(recognizePinchGesture(from:)))
@@ -35,42 +38,36 @@ class ViewController: UICollectionViewController {
         guard let gridLayout = collectionView.collectionViewLayout as? GridLayout else { return }
         let scale = recognizer.scale
 
-        newColumnSizes[indexPath.section] = clamp(newColumnSizes[indexPath.section] * scale, 0.5, 2)
-        newRowSizes[indexPath.section] = clamp(newRowSizes[indexPath.section] * scale, 0.5, 2)
+        columnSizes[indexPath.section] = clamp(columnSizes[indexPath.section] * scale, type(of: self).minCellSize, type(of: self).maxCellSize)
+        rowSizes[indexPath.section] = clamp(rowSizes[indexPath.section] * scale, type(of: self).minCellSize, type(of: self).maxCellSize)
 
-        try! gridLayout.set(columnSizes: newColumnSizes, rowSizes: newRowSizes)
-        
-        self.initialColumnSizes = newColumnSizes
-        self.initialRowSizes = newRowSizes
+        try? gridLayout.set(columnSizes: columnSizes, rowSizes: rowSizes)
 
         recognizer.scale = 1
     }
 
     @IBAction func handleRefreshItemTap(_ sender: UIBarButtonItem) {
-        initialColumnSizes = [1, 1, 1]
-        initialRowSizes = [1, 1, 1]
-
-        newColumnSizes = initialColumnSizes
-        newRowSizes = initialRowSizes
+        columnSizes = type(of: self).defaultColumnSizes
+        rowSizes = type(of: self).defaultRowSizes
 
         let gridLayout = GridLayout()
-        try! gridLayout.set(columnSizes: newColumnSizes, rowSizes: newRowSizes)
+        try? gridLayout.set(columnSizes: columnSizes, rowSizes: rowSizes)
 
         collectionView.setCollectionViewLayout(gridLayout, animated: true)
     }
 }
 
-extension ViewController {
+extension GridViewController {
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return initialColumnSizes.count
+        return columnSizes.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return initialRowSizes.count
+        return rowSizes.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ViewController.cellId, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: GridViewController.cellId, for: indexPath)
         return cell
     }
 }

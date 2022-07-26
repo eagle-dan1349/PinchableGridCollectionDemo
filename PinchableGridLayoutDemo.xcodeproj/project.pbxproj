@@ -8,15 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		30211093288578AA00B1DD9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30211092288578AA00B1DD9B /* AppDelegate.swift */; };
-		30211097288578AA00B1DD9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30211096288578AA00B1DD9B /* ViewController.swift */; };
+		30211097288578AA00B1DD9B /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30211096288578AA00B1DD9B /* GridViewController.swift */; };
 		3021109A288578AA00B1DD9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30211098288578AA00B1DD9B /* Main.storyboard */; };
 		3021109C288578AD00B1DD9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3021109B288578AD00B1DD9B /* Assets.xcassets */; };
 		3021109F288578AD00B1DD9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3021109D288578AD00B1DD9B /* LaunchScreen.storyboard */; };
 		302110A728857CFB00B1DD9B /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302110A628857CFB00B1DD9B /* GridLayout.swift */; };
+		30675EDE288FD34300F26010 /* UtilitySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30675EDD288FD34300F26010 /* UtilitySpec.swift */; };
+		30675EE0288FD53C00F26010 /* GridViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30675EDF288FD53C00F26010 /* GridViewControllerSpec.swift */; };
+		3075C784288EA4BB00F03856 /* GridLayoutSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3075C783288EA4BB00F03856 /* GridLayoutSpec.swift */; };
+		30AB4663288E7F7400886C8A /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 30AB4662288E7F7400886C8A /* Quick */; };
+		30AB4666288E7FE800886C8A /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 30AB4665288E7FE800886C8A /* Nimble */; };
 		30D4F1502887CE9200BF0858 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F14F2887CE9200BF0858 /* Utility.swift */; };
-		30D4F1582887EAD000BF0858 /* GridLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F1572887EAD000BF0858 /* GridLayoutTests.swift */; };
-		30D4F15F2887F59800BF0858 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F15E2887F59800BF0858 /* UtilityTests.swift */; };
-		30D4F1612887F85500BF0858 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F1602887F85500BF0858 /* ViewControllerTests.swift */; };
 		30D4F1632887FAAF00BF0858 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D4F1622887FAAF00BF0858 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,17 +35,17 @@
 /* Begin PBXFileReference section */
 		3021108F288578AA00B1DD9B /* PinchableGridLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinchableGridLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30211092288578AA00B1DD9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30211096288578AA00B1DD9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30211096288578AA00B1DD9B /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		30211099288578AA00B1DD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3021109B288578AD00B1DD9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3021109E288578AD00B1DD9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		302110A0288578AD00B1DD9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		302110A628857CFB00B1DD9B /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		30675EDD288FD34300F26010 /* UtilitySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitySpec.swift; sourceTree = "<group>"; };
+		30675EDF288FD53C00F26010 /* GridViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewControllerSpec.swift; sourceTree = "<group>"; };
+		3075C783288EA4BB00F03856 /* GridLayoutSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutSpec.swift; sourceTree = "<group>"; };
 		30D4F14F2887CE9200BF0858 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		30D4F1552887EAD000BF0858 /* PinchableGridLayoutDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchableGridLayoutDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30D4F1572887EAD000BF0858 /* GridLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayoutTests.swift; sourceTree = "<group>"; };
-		30D4F15E2887F59800BF0858 /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
-		30D4F1602887F85500BF0858 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		30D4F1622887FAAF00BF0858 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AB4663288E7F7400886C8A /* Quick in Frameworks */,
+				30AB4666288E7FE800886C8A /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +90,9 @@
 		30211091288578AA00B1DD9B /* PinchableGridLayoutDemo */ = {
 			isa = PBXGroup;
 			children = (
-				30211092288578AA00B1DD9B /* AppDelegate.swift */,
-				30D4F1622887FAAF00BF0858 /* SceneDelegate.swift */,
-				30211096288578AA00B1DD9B /* ViewController.swift */,
-				302110A628857CFB00B1DD9B /* GridLayout.swift */,
-				30D4F14F2887CE9200BF0858 /* Utility.swift */,
-				30211098288578AA00B1DD9B /* Main.storyboard */,
+				30675EE2288FD57600F26010 /* AppDelegate */,
+				30675EE3288FD58100F26010 /* Utility */,
+				30675EE1288FD56A00F26010 /* UI */,
 				3021109B288578AD00B1DD9B /* Assets.xcassets */,
 				3021109D288578AD00B1DD9B /* LaunchScreen.storyboard */,
 				302110A0288578AD00B1DD9B /* Info.plist */,
@@ -99,12 +100,55 @@
 			path = PinchableGridLayoutDemo;
 			sourceTree = "<group>";
 		};
+		30675EE1288FD56A00F26010 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				30211098288578AA00B1DD9B /* Main.storyboard */,
+				30675EE5288FD5B500F26010 /* GridViewController */,
+				30675EE4288FD5AB00F26010 /* GridLayout */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		30675EE2288FD57600F26010 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				30211092288578AA00B1DD9B /* AppDelegate.swift */,
+				30D4F1622887FAAF00BF0858 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		30675EE3288FD58100F26010 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				30D4F14F2887CE9200BF0858 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		30675EE4288FD5AB00F26010 /* GridLayout */ = {
+			isa = PBXGroup;
+			children = (
+				302110A628857CFB00B1DD9B /* GridLayout.swift */,
+			);
+			path = GridLayout;
+			sourceTree = "<group>";
+		};
+		30675EE5288FD5B500F26010 /* GridViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30211096288578AA00B1DD9B /* GridViewController.swift */,
+			);
+			path = GridViewController;
+			sourceTree = "<group>";
+		};
 		30D4F1562887EAD000BF0858 /* PinchableGridLayoutDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				30D4F1572887EAD000BF0858 /* GridLayoutTests.swift */,
-				30D4F15E2887F59800BF0858 /* UtilityTests.swift */,
-				30D4F1602887F85500BF0858 /* ViewControllerTests.swift */,
+				3075C783288EA4BB00F03856 /* GridLayoutSpec.swift */,
+				30675EDD288FD34300F26010 /* UtilitySpec.swift */,
+				30675EDF288FD53C00F26010 /* GridViewControllerSpec.swift */,
 			);
 			path = PinchableGridLayoutDemoTests;
 			sourceTree = "<group>";
@@ -116,6 +160,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 302110A3288578AD00B1DD9B /* Build configuration list for PBXNativeTarget "PinchableGridLayoutDemo" */;
 			buildPhases = (
+				3075C78B288EAF2000F03856 /* ShellScript */,
 				3021108B288578AA00B1DD9B /* Sources */,
 				3021108C288578AA00B1DD9B /* Frameworks */,
 				3021108D288578AA00B1DD9B /* Resources */,
@@ -125,6 +170,8 @@
 			dependencies = (
 			);
 			name = PinchableGridLayoutDemo;
+			packageProductDependencies = (
+			);
 			productName = PinchableGridLayoutDemo;
 			productReference = 3021108F288578AA00B1DD9B /* PinchableGridLayoutDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30D4F15D2887EAD000BF0858 /* Build configuration list for PBXNativeTarget "PinchableGridLayoutDemoTests" */;
 			buildPhases = (
+				3075C78C288EAF3000F03856 /* ShellScript */,
 				30D4F1512887EAD000BF0858 /* Sources */,
 				30D4F1522887EAD000BF0858 /* Frameworks */,
 				30D4F1532887EAD000BF0858 /* Resources */,
@@ -143,6 +191,10 @@
 				30D4F15A2887EAD000BF0858 /* PBXTargetDependency */,
 			);
 			name = PinchableGridLayoutDemoTests;
+			packageProductDependencies = (
+				30AB4662288E7F7400886C8A /* Quick */,
+				30AB4665288E7FE800886C8A /* Nimble */,
+			);
 			productName = PinchableGridLayoutDemoTests;
 			productReference = 30D4F1552887EAD000BF0858 /* PinchableGridLayoutDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -175,6 +227,10 @@
 				Base,
 			);
 			mainGroup = 30211086288578AA00B1DD9B;
+			packageReferences = (
+				30AB4661288E7F7400886C8A /* XCRemoteSwiftPackageReference "Quick" */,
+				30AB4664288E7FE800886C8A /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 30211090288578AA00B1DD9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,6 +261,43 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3075C78B288EAF2000F03856 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint autocorrect\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		3075C78C288EAF3000F03856 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3021108B288578AA00B1DD9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -212,7 +305,7 @@
 			files = (
 				30D4F1632887FAAF00BF0858 /* SceneDelegate.swift in Sources */,
 				30D4F1502887CE9200BF0858 /* Utility.swift in Sources */,
-				30211097288578AA00B1DD9B /* ViewController.swift in Sources */,
+				30211097288578AA00B1DD9B /* GridViewController.swift in Sources */,
 				30211093288578AA00B1DD9B /* AppDelegate.swift in Sources */,
 				302110A728857CFB00B1DD9B /* GridLayout.swift in Sources */,
 			);
@@ -222,9 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D4F1612887F85500BF0858 /* ViewControllerTests.swift in Sources */,
-				30D4F15F2887F59800BF0858 /* UtilityTests.swift in Sources */,
-				30D4F1582887EAD000BF0858 /* GridLayoutTests.swift in Sources */,
+				3075C784288EA4BB00F03856 /* GridLayoutSpec.swift in Sources */,
+				30675EDE288FD34300F26010 /* UtilitySpec.swift in Sources */,
+				30675EE0288FD53C00F26010 /* GridViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +472,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LAT256L2Z3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PinchableGridLayoutDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -405,6 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LAT256L2Z3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PinchableGridLayoutDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -489,6 +584,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		30AB4661288E7F7400886C8A /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		30AB4664288E7FE800886C8A /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		30AB4662288E7F7400886C8A /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30AB4661288E7F7400886C8A /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		30AB4665288E7FE800886C8A /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 30AB4664288E7FE800886C8A /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30211087288578AA00B1DD9B /* Project object */;
 }
